@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/scrollView"
+        android:fontFamily="@font/inter"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/nameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/textfield_bg"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/emailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/textfield_bg"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/passwordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/textfield_bg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/errorMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:textColor="#E64D4E"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_bg"
+                android:padding="8dp"
+                android:text="Sign Up"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/goToLoginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:text="Already Have An Account?"
+                android:textColor="@color/white" />
+            <ProgressBar
+                android:id="@+id/loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
